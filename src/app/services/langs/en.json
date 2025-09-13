@@ -1,0 +1,17 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hello, I'm José Martínez",
+    "subtitle": "Full Stack Developer",
+    "description": "Passionate about creating exceptional digital experiences"
+  },
+  "about": {
+    "title": "About me",
+    "description": "I'm a developer with experience in modern technologies"
+  }
+}
