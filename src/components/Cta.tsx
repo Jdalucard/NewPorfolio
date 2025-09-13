@@ -6,7 +6,7 @@ const Cta = () => {
       <a 
         href="/my-portfolio/src/assets/CVJosé_Martinez .pdf" 
         download
-        className="bg-[var(--color-primary)] text-[var(--color-bg)] px-4 py-2 rounded hover:opacity-90 transition-opacity"
+        className="bg-[var(--color-primary)] text-[var(--color-bg)] px-4 py-2 rounded hover:bg-[var(--theme-links-hover)] transition-colors duration-300"
       >
         Descargar CV
       </a>

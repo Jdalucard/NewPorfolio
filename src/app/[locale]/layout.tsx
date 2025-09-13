@@ -28,14 +28,15 @@ export default async function RootLayout({ children, params }: Props) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=optional"
         />
       </head>
-      <body className={`${poppins.className} antialiased`}>
+      <body className={`${poppins.variable} font-sans antialiased`}>
         <LanguageProvider>
           <ThemeProvider>
-            <div className="flex h-screen">
+            <main className="flex h-screen items-center justify-between gap-20 p-8">
               <Sidebar />
-
-              <main className="flex-1 overflow-auto p-6">{children}</main>
-            </div>
+              <div className="custom-scrollbar flex-1 h-[90%] max-w[100%] overflow-y-auto p-5 border border-gray-300 dark:border-gray-700 rounded-lg">
+                {children}
+              </div>
+            </main>
           </ThemeProvider>
         </LanguageProvider>
       </body>

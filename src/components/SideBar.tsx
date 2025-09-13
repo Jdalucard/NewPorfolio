@@ -18,7 +18,7 @@ export default function Sidebar() {
   const styles = {
     aside: {
       color: "var(--color-text)",
-      borderRight: "2px solid var(--color-secondary)",
+
     },
     link: {
       color: "var(--color-text)",
@@ -27,7 +27,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className="w-64 h-screen p-4 flex flex-col justify-between"
+      className="h-[96%] p-4 w-72 flex flex-col justify-between border border-gray-300 dark:border-gray-700 rounded-lg "
       style={styles.aside}
     >
       <div className="mb-8">
@@ -36,14 +36,14 @@ export default function Sidebar() {
           <Link
             href="/"
             style={styles.link}
-            className="hover:text-[var(--color-secondary)] transition-colors"
+            className="hover:text-[var(--theme-links-hover)] transition-colors"
           >
             {t("navigation.home")}
           </Link>
           <Link
             href="/about"
             style={styles.link}
-            className="hover:text-[var(--color-secondary)] transition-colors"
+            className="hover:text-[var(--theme-links-hover)] transition-colors"
           >
             {t("navigation.about")}
           </Link>
@@ -53,14 +53,20 @@ export default function Sidebar() {
     
       {isClient && (
         <div className="flex justify-between">
-          <button onClick={toggleTheme}>
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 ] hover:text-[var(--color-primary)]"
+          >
             {theme === "dark" ? (
               <span className="material-symbols-outlined">moon_stars</span>
             ) : (
               <span className="material-symbols-outlined">brightness_7</span>
             )}
           </button>
-          <button onClick={toggleLanguage}>
+          <button
+            className="p-2 rounded-lg transition-transform duration-300 hover:scale-125 ]"
+            onClick={toggleLanguage}
+          >
             {language === "es" ? (
               <span className="fi fi-us"></span>
             ) : (

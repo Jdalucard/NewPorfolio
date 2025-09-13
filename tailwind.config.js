@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-poppins)', 'system-ui', 'sans-serif'],
+      },
       colors: {
         bg: "var(--color-bg)",
         text: "var(--color-text)",
@@ -14,6 +17,7 @@ module.exports = {
         secondary: "var(--color-secondary)",
       },
     },
+    
   },
   plugins: [],
 };
