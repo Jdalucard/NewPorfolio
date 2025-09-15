@@ -2,6 +2,7 @@ import "../globals.css";
 import { Poppins } from "next/font/google";
 import { ThemeProvider } from "@/provider/themeProvider";
 import LanguageProvider from "@/provider/LanguageProvider";
+import AnimatedContainer from "@/components/AnimatedContainer";
 
 import Sidebar from "@/components/SideBar";
 
@@ -34,7 +35,7 @@ export default async function RootLayout({ children, params }: Props) {
             <main className="flex h-screen items-center justify-between gap-20 p-8">
               <Sidebar />
               <div className="custom-scrollbar flex-1 h-[90%] max-w[100%] overflow-y-auto p-5 border border-gray-300 dark:border-gray-700 rounded-lg">
-                {children}
+                <AnimatedContainer >{children}</AnimatedContainer>
               </div>
             </main>
           </ThemeProvider>

@@ -1,24 +1,22 @@
 "use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion"; 
 import { useTheme } from "@/provider/themeProvider";
 import { useLanguage } from "@/provider/LanguageProvider";
+import { useAnimateTitle } from "@/hook/AnimateTitle";
 import "flag-icons/css/flag-icons.min.css";
 
 export default function Sidebar() {
   const { theme, toggleTheme, isHydrated: themeHydrated } = useTheme();
-  const {
-    language,
-    toggleLanguage,
-    t,
-    isHydrated: langHydrated,
-  } = useLanguage();
+  const { language, toggleLanguage, t, isHydrated: langHydrated } = useLanguage();
+  const { container, letter, key } = useAnimateTitle(true, 3000);
 
   const isClient = themeHydrated && langHydrated;
 
   const styles = {
     aside: {
       color: "var(--color-text)",
-
     },
     link: {
       color: "var(--color-text)",
@@ -31,8 +29,22 @@ export default function Sidebar() {
       style={styles.aside}
     >
       <div className="mb-8">
-        <h1 className="text-2xl font-bold mb-8">Mi Portafolio</h1>
-        <nav className="flex flex-col gap-4">
+
+        <motion.h1
+          key={key} 
+          className="text-2xl font-bold flex flex-wrap"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          {"Mi Portafolio".split("").map((char, index) => (
+            <motion.span key={index} variants={letter}>
+              {char}
+            </motion.span>
+          ))}
+        </motion.h1>
+
+        <nav className="flex flex-col gap-4 mt-4">
           <Link
             href="/"
             style={styles.link}
@@ -49,13 +61,12 @@ export default function Sidebar() {
           </Link>
         </nav>
       </div>
-      
-    
+
       {isClient && (
         <div className="flex justify-between">
           <button
             onClick={toggleTheme}
-            className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 ] hover:text-[var(--color-primary)]"
+            className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 hover:text-[var(--color-primary)]"
           >
             {theme === "dark" ? (
               <span className="material-symbols-outlined">moon_stars</span>
@@ -63,8 +74,9 @@ export default function Sidebar() {
               <span className="material-symbols-outlined">brightness_7</span>
             )}
           </button>
+
           <button
-            className="p-2 rounded-lg transition-transform duration-300 hover:scale-125 ]"
+            className="p-2 rounded-lg transition-transform duration-300 hover:scale-125"
             onClick={toggleLanguage}
           >
             {language === "es" ? (

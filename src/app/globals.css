@@ -58,3 +58,9 @@ body {
     background-color: var(--scrollbar-thumb-hover);
   }
 }
+
+#animation .text-xl {
+  font-size: 1.5rem;
+  color: currentColor;
+  letter-spacing: 0.06em;
+}
