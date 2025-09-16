@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
     <>
-      <header>
+      
         <div>
           <h1>{t("home.title")}</h1>
 
@@ -203,7 +203,7 @@ export default function Home() {
           </p>
           <Cta />
         </div>
-      </header>
+    
     </>
   );
 }

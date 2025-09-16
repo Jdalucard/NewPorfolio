@@ -2,8 +2,10 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects",
-    "contact": "Contact"
+    "portfolio": "Projects",
+    "contact": "Contact",
+    "services": "Services",
+    "experience": "Experience"
   },
   "home": {
     "title": "Hello, I'm José Martínez",
@@ -13,5 +15,17 @@
   "about": {
     "title": "About me",
     "description": "I'm a developer with experience in modern technologies"
+  },
+  "services": {
+    "title": "Services"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "portfolio": {
+    "title": "Projects"
   }
 }

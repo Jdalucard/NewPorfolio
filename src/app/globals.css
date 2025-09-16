@@ -1,36 +1,8 @@
+@import url('./../styles/themes.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  /* --- Light Theme --- */
-  --color-bg: #f1f5f9; /* slate-100 */
-  --color-text: #0f172a; /* slate-900 */
-  --color-primary: #0ea5e9; /* sky-500 */
-  --color-secondary: #64748b; /* slate-500 */
-  --theme-section-background: #ffffff; /* white */
-  --theme-standard-borders: #e2e8f0; /* slate-200 */
-  --scrollbar-track: #e2e8f0; /* slate-200 */
-  --scrollbar-thumb: #cbd5e1; /* slate-300 */
-  --scrollbar-thumb-hover: #94a3b8; /* slate-400 */
-}
-
-[data-theme="dark"] {
-  /* --- Dark & Futuristic Theme --- */
-  --color-bg: #0f172a; /* slate-900 */
-  --color-text: #e2e8f0; /* slate-200 */
-  --color-primary: #00a9ff; /* Cian eléctrico (mantenido) */
-  --color-secondary: #64748b; /* slate-500 */
-  --theme-section-background: #1e293b; /* slate-800 */
-  --theme-standard-borders: #334155; /* slate-700 */
-  --theme-links-hover: #ffffff; /* Blanco sutil para el hover */
-
-  /* --- Scrollbar --- */
-  --scrollbar-track: #1e293b; /* slate-800 */
-  --scrollbar-thumb: #475569; /* slate-600 */
-  --scrollbar-thumb-hover: #64748b; /* slate-500 */
-}
-
 
 body {
   background-color: var(--color-bg);
@@ -38,8 +10,9 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@layer utilities {
 
+@layer utilities {
+  
   .custom-scrollbar::-webkit-scrollbar {
     width: 8px;
   }

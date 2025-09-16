@@ -34,7 +34,7 @@ export default async function RootLayout({ children, params }: Props) {
           <ThemeProvider>
             <main className="flex h-screen items-center justify-between gap-20 p-8">
               <Sidebar />
-              <div className="custom-scrollbar flex-1 h-[90%] max-w[100%] overflow-y-auto p-5 border border-gray-300 dark:border-gray-700 rounded-lg">
+              <div className="shadow-theme-md custom-scrollbar flex-1 h-[90%] max-w[100%] overflow-y-auto p-5  border-gray-300 dark:border-gray-700 rounded-lg">
                 <AnimatedContainer >{children}</AnimatedContainer>
               </div>
             </main>

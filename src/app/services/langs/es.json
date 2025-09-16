@@ -2,8 +2,10 @@
   "navigation": {
     "home": "Inicio",
     "about": "Acerca de",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "portfolio": "Proyectos",
+    "contact": "Contacto",
+    "services": "Servicios",
+    "experience": "Experiencia"
   },
   "home": {
     "title": "Hola, soy José Martínez",
@@ -13,5 +15,17 @@
   "about": {
     "title": "Acerca de mí",
     "description": "Soy un desarrollador con experiencia en tecnologías modernas"
+  },
+  "services": {
+    "title": "Servicios"
+  },
+  "contact": {
+    "title": "Contacto"
+  },
+  "experience": {
+    "title": "Experiencia"
+  },
+  "portfolio": {
+    "title": "Proyectos"
   }
 }

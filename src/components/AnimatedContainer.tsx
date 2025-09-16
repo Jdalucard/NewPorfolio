@@ -1,4 +1,3 @@
-// AnimatedContainer.tsx
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,12 +9,12 @@ type Props = {
 };
 
 export default function AnimatedContainer({ children }: Props) {
-  const pathname = usePathname(); 
+  const pathname = usePathname();
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={pathname} // Cambia la key según la ruta
+        key={pathname}
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -40 }}
