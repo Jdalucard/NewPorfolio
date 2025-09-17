@@ -1,6 +1,4 @@
 "use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useTheme } from "@/provider/themeProvider";
@@ -8,36 +6,18 @@ import { useLanguage } from "@/provider/LanguageProvider";
 import { useAnimateTitle } from "@/hook/AnimateTitle";
 import Image from "next/image";
 import picture from "@/assets/Picture.webp";
-import { PhraseText, Routes } from "@/const";
+import { PhraseText } from "@/const";
+import Navigation from "./Navigation";
 import "flag-icons/css/flag-icons.min.css";
 
 const phrasesArray = Object.values(PhraseText);
 
-const isActiveLink = (pathname: string, route: string): boolean => {
-  const cleanedPathname =
-    pathname.startsWith("/en") || pathname.startsWith("/es")
-      ? pathname.substring(3)
-      : pathname;
-
-  if (route === Routes.HOME) {
-    return cleanedPathname === "/" || cleanedPathname === "";
-  }
-
-  return cleanedPathname.startsWith(route);
-};
-
 export default function Sidebar() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const pathname = usePathname();
 
   const { theme, toggleTheme, isHydrated: themeHydrated } = useTheme();
-  const {
-    language,
-    toggleLanguage,
-    t,
-    isHydrated: langHydrated,
-  } = useLanguage();
+  const { language, toggleLanguage, isHydrated: langHydrated } = useLanguage();
 
   const { container, letter, key, currentPhrase } = useAnimateTitle(
     phrasesArray,
@@ -107,94 +87,8 @@ export default function Sidebar() {
           </motion.h1>
         </div>
       </div>
-      <div className="mb-8">
-        <nav className="flex flex-col gap-4 mt-4">
-          <Link
-            href={Routes.HOME}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.HOME)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.home")}
-          </Link>
-          <Link
-            href={Routes.ABOUT}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.ABOUT)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.about")}
-          </Link>
-          <Link
-            href={Routes.EXPERIENCE}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.EXPERIENCE)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.experience")}
-          </Link>
-          <Link
-            href={Routes.SERVICES}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.SERVICES)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.services")}
-          </Link>
-          <Link
-            href={Routes.PORTFOLIO}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.PORTFOLIO)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.portfolio")}
-          </Link>
-          <Link
-            href={Routes.CONTACT}
-            className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.CONTACT)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-          >
-            {t("navigation.contact")}
-          </Link>
-        </nav>
-      </div>
+
+      <Navigation/>
 
       {isClient && (
         <div className="flex justify-between">

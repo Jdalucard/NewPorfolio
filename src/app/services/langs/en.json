@@ -8,13 +8,14 @@
     "experience": "Experience"
   },
   "home": {
-    "title": "Hello, I'm José Martínez",
+    "title": "Hello, I'm ",
+    "aboutMe": "A little about me",
     "subtitle": "Full Stack Developer",
-    "description": "Passionate about creating exceptional digital experiences"
+    "description": "I am a full stack developer with three years of experience building web applications, with a focus on creating efficient and scalable solutions.\nMy tech stack includes React, Next.js, Node.js, Express, and MongoDB, allowing me to work on both frontend and backend development.\nI have experience developing interactive interfaces, designing RESTful APIs, and using Git and GitHub for version control.\nIn addition, I have strong teamwork and communication skills, enabling me to collaborate effectively in agile projects.\nI am constantly learning and always looking for new technologies and innovations to improve my skills and bring value to every project."
   },
   "about": {
-    "title": "About me",
-    "description": "I'm a developer with experience in modern technologies"
+    "title": "About Me",
+    "description": "I am a developer with experience in modern technologies"
   },
   "services": {
     "title": "Services"

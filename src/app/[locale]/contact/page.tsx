@@ -1,12 +1,16 @@
 "use client";
-import React from 'react'
+import React from "react";
 import { useLanguage } from "@/provider/LanguageProvider";
 
 const Contact = () => {
   const { t } = useLanguage();
   return (
-    <div><h1>{t("contact.title")}</h1></div>
-  )
-}
+    <section className="p-6">
+      <header>
+        <h1 className="text-3xl font-bold mb-6">{t("contact.title")}</h1>
+      </header>
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

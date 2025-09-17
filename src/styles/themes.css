@@ -1,39 +1,39 @@
 :root {
-    /* --- Tema claro con gris suave y toques de verde --- */
-    --color-bg: #f5f5f5; /* Un gris muy, muy claro, casi blanco */
-    --color-text: #2c3e50; /* Un gris oscuro para el texto */
-    --color-primary: #00ff00; /* Verde brillante para destacar */
-    --color-secondary: #95a5a6; /* Un gris más claro para texto secundario */
-    --theme-section-background: #eeeeee; /* Un gris aún más claro para las secciones */
-    --theme-standard-borders: #dcdcdc; /* Un gris para los bordes */
-    --theme-links-hover: #00ff00; /* El mismo verde para el hover */
-  
-    /* --- Barra de desplazamiento --- */
-    --scrollbar-track: #eeeeee;
-    --scrollbar-thumb: #cccccc;
-    --scrollbar-thumb-hover: #999999;
+  --color-bg: #f5f5f5c0;
+  --color-text: #2c3e50;
+  --color-primary: #0084ff;
+  --color-secondary: #95a5a6;
+  --theme-section-background: #eeeeee;
+  --theme-standard-borders: #dcdcdc;
 
-      /* --- Variable para las sombras --- */
-      --color-shadow: rgba(0, 0, 0, 0.1);
-      
-  }
-  [data-theme="dark"] {
-    /* --- Tema Oscuro con Toques de Verde --- */
-    --color-bg: #0c0c0c; /* Gris muy oscuro, casi negro */
-    --color-text: #f0f0f0; /* Blanco apagado para el texto */
-    --color-primary: #00ff00; /* Verde brillante para destacar */
-    --color-secondary: #8c8c8c; /* Gris para el texto secundario */
-    --theme-section-background: #1a1a1a; /* Gris oscuro para secciones */
-    --theme-standard-borders: #4d4d4d; /* Gris para bordes */
-    --theme-links-hover: #00ff00; /* Verde brillante para el hover */
-  
-    /* --- Scrollbar --- */
-    --scrollbar-track: #1a1a1a; /* Gris oscuro */
-    --scrollbar-thumb: #4d4d4d; /* Gris más claro para el pulgar */
-    --scrollbar-thumb-hover: #666666; /* Gris aún más claro para el hover */
+  /* Scrollbar */
+  --scrollbar-track: #eeeeee;
+  --scrollbar-thumb: #cccccc;
+  --scrollbar-thumb-hover: #999999;
 
-      /* --- Variable para las sombras --- */
-    --color-shadow: rgba(255, 255, 255, 0.05);
-  }
+  /* Sombras */
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
   
-  
+  --theme-links-hover: #006ac5;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0c0c0c;
+  --color-text: #f0f0f0;
+  --color-primary: #0084ff;
+  --color-secondary: #8c8c8c;
+  --theme-section-background: #1a1a1a;
+  --theme-standard-borders: #4d4d4d;
+
+
+  --theme-links-hover: #3399ff;
+
+  /* Scrollbar */
+  --scrollbar-track: #1a1a1a;
+  --scrollbar-thumb: #4d4d4d;
+  --scrollbar-thumb-hover: #666666;
+
+  /* Sombras */
+  --color-shadow: #2c3e50;
+}
