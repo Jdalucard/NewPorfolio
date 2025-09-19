@@ -25,7 +25,6 @@ export default function Home() {
       </div>
 
       <div className="flex justify-between items-center gap-6 mt-6">
-      
         <div className="relative w-[150px] h-[150px]">
           <Image
             src={Picture}

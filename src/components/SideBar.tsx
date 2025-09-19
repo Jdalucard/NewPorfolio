@@ -90,19 +90,19 @@ export default function Sidebar() {
 
       <Navigation/>
 
-      {isClient && (
-        <div className="flex justify-between">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 hover:text-[var(--color-primary)]"
-          >
-            {theme === "dark" ? (
-              <span className="material-symbols-outlined">moon_stars</span>
-            ) : (
-              <span className="material-symbols-outlined">brightness_7</span>
-            )}
-          </button>
+      <div className="flex justify-between">
+        <button
+          onClick={toggleTheme}
+          className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 hover:text-[var(--color-primary)]"
+        >
+          {theme === "dark" ? (
+            <span className="material-symbols-outlined">moon_stars</span>
+          ) : (
+            <span className="material-symbols-outlined">brightness_7</span>
+          )}
+        </button>
 
+        {isClient && (
           <button
             className="p-2 rounded-lg transition-transform duration-300 hover:scale-125"
             onClick={toggleLanguage}
@@ -113,8 +113,8 @@ export default function Sidebar() {
               <span className="fi fi-es"></span>
             )}
           </button>
-        </div>
-      )}
+        )}
+      </div>
     </aside>
   );
 }

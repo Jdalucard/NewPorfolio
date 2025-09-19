@@ -22,18 +22,28 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
   const [isHydrated, setIsHydrated] = useState(false);
 
   useEffect(() => {
-    // Load theme from localStorage after hydration
+    
     const savedTheme = localStorage.getItem("theme") as Theme;
+    
     if (savedTheme && (savedTheme === "light" || savedTheme === "dark")) {
       setTheme(savedTheme);
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    } else {
+    
+      setTheme("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
     }
     setIsHydrated(true);
   }, []);
 
   useEffect(() => {
     if (isHydrated) {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
+    
+      const currentTheme = document.documentElement.getAttribute("data-theme");
+      if (currentTheme !== theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+      }
     }
   }, [theme, isHydrated]);
 
