@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
+import { useLanguage } from "@/provider/LanguageProvider";
 
 const Cta = () => {
+  const { t } = useLanguage();
   return (
     <div className="flex gap-4 mt-3">
       <a
-        href="/my-portfolio/src/assets/CVJose_Martinez.pdf"
-        download
+        href="/assets/CVJosé_Martinez .pdf"
+        download="CV_Jose_Martinez.pdf"
         className="
           relative
           inline-block
@@ -24,7 +27,7 @@ const Cta = () => {
           active:scale-95
         "
       >
-        <span className="relative z-10">Descargar CV</span>
+        <span className="relative z-10">{t("home.downloadCV")}</span>
 
         <span
           className="

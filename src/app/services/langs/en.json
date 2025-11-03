@@ -10,23 +10,137 @@
   "home": {
     "title": "Hello, I'm ",
     "aboutMe": "A little about me",
-    "subtitle": "Full Stack Developer",
-    "description": "I am a full stack developer with three years of experience building web applications, with a focus on creating efficient and scalable solutions.\nMy tech stack includes React, Next.js, Node.js, Express, and MongoDB, allowing me to work on both frontend and backend development.\nI have experience developing interactive interfaces, designing RESTful APIs, and using Git and GitHub for version control.\nIn addition, I have strong teamwork and communication skills, enabling me to collaborate effectively in agile projects.\nI am constantly learning and always looking for new technologies and innovations to improve my skills and bring value to every project."
+    "subtitle": "Full Stack Web Developer",
+    "downloadCV": "Download CV",
+    "description": "I am a full stack developer with experience in modern web application development, specializing in React, Node.js, Express, and MongoDB. My passion is focused on performance optimization and creating efficient and scalable solutions, with skills in teamwork and agile methodologies like Scrum."
   },
   "about": {
     "title": "About Me",
-    "description": "I am a developer with experience in modern technologies"
-  },
-  "services": {
-    "title": "Services"
-  },
-  "contact": {
-    "title": "Contact"
+    "subtitle": "Full Stack Web Developer",
+    "profile": "Professional Profile",
+    "profileDescription": "I am a full stack web developer with experience in modern web application development. I specialize in technologies like React, Node.js, Express, and MongoDB, with a passion for performance optimization and creating efficient and scalable solutions. I have experience working in multidisciplinary teams using agile methodologies like Scrum.",
+    "skills": "Skills",
+    "frontend": "Frontend",
+    "frontendSkills": "HTML5, CSS3, JavaScript (ES8+), Next.js, React, Redux Toolkit. Development of SEO-optimized interactive interfaces.",
+    "backend": "Backend",
+    "backendSkills": "Node.js, Express.js, MongoDB. Creation of RESTful APIs and management of non-relational databases.",
+    "tools": "Other Tools",
+    "toolsSkills": "Version control with Git and GitHub, Agile Methodologies (Scrum), ChatGPT, Gemini, GitHub Copilot, Claude (Anthropic), GPT-4, GPT-3.5 (OpenAI), LLaMA (Meta).",
+    "education": "Education",
+    "education1": "U Camp, Full Stack Bootcamp",
+    "education1Date": "Jan 2021 – Nov 2021",
+    "education1Location": "Mexico City, Mexico",
+    "education2": "University Institute of Administration and Management (UDAG)",
+    "education2Degree": "TSU Organization and Methods",
+    "education2Date": "Jan 2010 – Dec 2013",
+    "education2Location": "Caracas, Venezuela",
+    "certifications": "Certifications",
+    "certificationsLink": "View Badges",
+    "interests": "Interests",
+    "interest1": "Web Development and Technology",
+    "interest2": "Innovation and Personal Growth",
+    "interest3": "Agile Methodologies"
   },
   "experience": {
-    "title": "Experience"
+    "title": "Professional Experience",
+    "job1": {
+      "title": "Frontend Developer",
+      "company": "Mrulex.Ou",
+      "location": "Tallinn, Estonia",
+      "period": "Sep 2022 – Nov 2024",
+      "achievement1": "Designed and optimized the user interface in React, achieving a 30% improvement in loading speed",
+      "achievement2": "Implemented Redux Toolkit for better state management",
+      "achievement3": "Collaborated with designers and backend developers to integrate RESTful APIs"
+    },
+    "job2": {
+      "title": "Full Stack Developer",
+      "company": "Pitchdb.",
+      "location": "Texas, USA",
+      "period": "2023 – Jul 2024",
+      "achievement1": "Developed key functionalities in Next.js and Node.js, achieving a 40% optimization in response times",
+      "achievement2": "Implemented secure authentication with JWT",
+      "achievement3": "Refactored React components to improve code maintainability"
+    },
+    "job3": {
+      "title": "Freelance Web Developer",
+      "company": "Independent",
+      "location": "Medellín, Colombia",
+      "period": "Jan 2022 – Present",
+      "achievement1": "Design and development of personalized web applications for international clients",
+      "achievement2": "Creation of frontend solutions in React and backend in Node.js with MongoDB databases",
+      "achievement3": "Version management and project deployment on cloud platforms"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Solutions I offer",
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "I create modern, responsive, and SEO-optimized user interfaces using React, Next.js, and cutting-edge technologies.",
+      "features": [
+        "Interactive and dynamic interfaces",
+        "SEO optimization",
+        "Responsive design",
+        "Performance and speed",
+        "API integration"
+      ]
+    },
+    "backend": {
+      "title": "Backend Development",
+      "description": "I build robust and scalable RESTful APIs using Node.js, Express, and MongoDB databases.",
+      "features": [
+        "RESTful APIs",
+        "MongoDB databases",
+        "Authentication and security",
+        "Scalable architecture",
+        "Performance optimization"
+      ]
+    },
+    "fullstack": {
+      "title": "Full Stack Development",
+      "description": "I offer complete solutions from design to implementation, covering both frontend and backend.",
+      "features": [
+        "Complete web applications",
+        "Frontend-backend integration",
+        "Cloud deployment",
+        "Project management",
+        "Agile methodologies"
+      ]
+    },
+    "consulting": {
+      "title": "Consulting and Optimization",
+      "description": "I help improve the performance and scalability of existing applications.",
+      "features": [
+        "Code optimization",
+        "Performance improvement",
+        "Refactoring",
+        "Code review",
+        "Technical training"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "I'm available for new projects",
+    "description": "If you have a project in mind or want to work together, don't hesitate to contact me.",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "nationality": "Nationality",
+    "emailValue": "danieluz3188@gmail.com",
+    "phoneValue": "+57 302 701 1214",
+    "locationValue": "Medellín, Colombia",
+    "nationalityValue": "Venezuelan",
+    "sendMessage": "Send Message",
+    "getInTouch": "Let's get in touch",
+    "emailSubject": "Contact from Portfolio"
   },
   "portfolio": {
-    "title": "Projects"
+    "title": "Projects",
+    "subtitle": "Some of my recent work",
+    "comingSoon": "Coming Soon",
+    "description": "I'm working on adding my featured projects here. In the meantime, you can review my work experience or contact me to learn more about my work.",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
   }
 }

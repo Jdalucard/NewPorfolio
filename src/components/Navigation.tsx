@@ -19,11 +19,15 @@ const Navigation = () => {
     return cleanedPathname.startsWith(route);
   };
 
-  const { t, isHydrated: langHydrated } = useLanguage();
+  const { t, language, isHydrated: langHydrated } = useLanguage();
 
   if (!langHydrated) {
     return null;
   }
+
+  const getLocalizedPath = (route: string) => {
+    return `/${language}${route}`;
+  };
 
   return (
     <>
@@ -31,7 +35,7 @@ const Navigation = () => {
         <div className="mb-8">
           <nav className="flex flex-col gap-4 mt-4">
             <Link
-              href={Routes.HOME}
+              href={getLocalizedPath(Routes.HOME)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]
@@ -45,7 +49,7 @@ const Navigation = () => {
               {t("navigation.home")}
             </Link>
             <Link
-              href={Routes.ABOUT}
+              href={getLocalizedPath(Routes.ABOUT)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]
@@ -59,7 +63,7 @@ const Navigation = () => {
               {t("navigation.about")}
             </Link>
             <Link
-              href={Routes.EXPERIENCE}
+              href={getLocalizedPath(Routes.EXPERIENCE)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]
@@ -73,7 +77,7 @@ const Navigation = () => {
               {t("navigation.experience")}
             </Link>
             <Link
-              href={Routes.SERVICES}
+              href={getLocalizedPath(Routes.SERVICES)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]
@@ -87,7 +91,7 @@ const Navigation = () => {
               {t("navigation.services")}
             </Link>
             <Link
-              href={Routes.PORTFOLIO}
+              href={getLocalizedPath(Routes.PORTFOLIO)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]
@@ -101,7 +105,7 @@ const Navigation = () => {
               {t("navigation.portfolio")}
             </Link>
             <Link
-              href={Routes.CONTACT}
+              href={getLocalizedPath(Routes.CONTACT)}
               className={`
               p-2 rounded-lg transition-all duration-300 ease-in-out
               hover:bg-[var(--theme-section-background)]

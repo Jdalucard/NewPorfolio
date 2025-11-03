@@ -10,23 +10,137 @@
   "home": {
     "title": "Hola, soy ",
     "aboutMe": "Un poco sobre Mi",
-    "subtitle": "Desarrollador Full Stack",
-    "description": "Soy un desarrollador full stack con tres años de experiencia en el desarrollo de aplicaciones web, con un enfoque en la creación de soluciones eficientes y escalables.\nMi stack tecnológico incluye React, Next.js, Node.js, Express y MongoDB, permitiéndome trabajar tanto en el frontend como en el backend.\nTengo experiencia en el desarrollo de interfaces interactivas, el diseño de APIs RESTful y el manejo de control de versiones con Git y GitHub.\nAdemás, poseo habilidades en trabajo en equipo y comunicación efectiva, lo que me permite colaborar eficientemente en proyectos ágiles.\nEstoy en constante aprendizaje y siempre en busca de nuevas tecnologías e innovaciones para mejorar mis habilidades y aportar valor a cada proyecto."
+    "subtitle": "Desarrollador Web Full Stack",
+    "downloadCV": "Descargar CV",
+    "description": "Soy un desarrollador full stack con experiencia en el desarrollo de aplicaciones web modernas, especializado en React, Node.js, Express y MongoDB. Mi pasión está enfocada en la optimización de rendimiento y la creación de soluciones eficientes y escalables, con habilidades en trabajo en equipo y metodologías ágiles como Scrum."
   },
   "about": {
     "title": "Acerca de mí",
-    "description": "Soy un desarrollador con experiencia en tecnologías modernas"
-  },
-  "services": {
-    "title": "Servicios"
-  },
-  "contact": {
-    "title": "Contacto"
+    "subtitle": "Desarrollador Web Full Stack",
+    "profile": "Perfil Profesional",
+    "profileDescription": "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web modernas. Me especializo en tecnologías como React, Node.js, Express y MongoDB, con una pasión por la optimización de rendimiento y la creación de soluciones eficientes y escalables. Tengo experiencia trabajando en equipos multidisciplinarios utilizando metodologías ágiles como Scrum.",
+    "skills": "Habilidades",
+    "frontend": "Frontend",
+    "frontendSkills": "HTML5, CSS3, JavaScript (ES8+), Next.js, React, Redux Toolkit. Desarrollo de interfaces interactivas optimizadas para SEO.",
+    "backend": "Backend",
+    "backendSkills": "Node.js, Express.js, MongoDB. Creación de APIs RESTful y gestión de bases de datos no relacionales.",
+    "tools": "Otras Herramientas",
+    "toolsSkills": "Control de versiones con Git y GitHub, Metodologías Ágiles (Scrum), ChatGPT, Gemini, GitHub Copilot, Claude (Anthropic), GPT-4, GPT-3.5 (OpenAI), LLaMA (Meta).",
+    "education": "Educación",
+    "education1": "U Camp, Bootcamp Full Stack",
+    "education1Date": "Ene 2021 – Nov 2021",
+    "education1Location": "México DF, México",
+    "education2": "Instituto Universitario de Administración y Gerencia (UDAG)",
+    "education2Degree": "TSU Organización y Métodos",
+    "education2Date": "Ene 2010 – Dic 2013",
+    "education2Location": "Caracas, Venezuela",
+    "certifications": "Certificaciones",
+    "certificationsLink": "Ver Badges",
+    "interests": "Intereses",
+    "interest1": "Desarrollo Web y Tecnología",
+    "interest2": "Innovación y Crecimiento Personal",
+    "interest3": "Metodologías Ágiles"
   },
   "experience": {
-    "title": "Experiencia"
+    "title": "Experiencia Profesional",
+    "job1": {
+      "title": "Desarrollador Frontend",
+      "company": "Mrulex.Ou",
+      "location": "Tallin, Estonia",
+      "period": "Sep 2022 – Nov 2024",
+      "achievement1": "Diseñé y optimicé la interfaz de usuario en React, logrando una mejora del 30% en la velocidad de carga",
+      "achievement2": "Implementé Redux Toolkit para una mejor gestión del estado",
+      "achievement3": "Colaboré con diseñadores y desarrolladores backend para integrar APIs RESTful"
+    },
+    "job2": {
+      "title": "Desarrollador Full Stack",
+      "company": "Pitchdb.",
+      "location": "Texas, EE.UU.",
+      "period": "2023 – Jul 2024",
+      "achievement1": "Desarrollé funcionalidades clave en Next.js y Node.js, logrando una optimización del 40% en los tiempos de respuesta",
+      "achievement2": "Implementé autenticación segura con JWT",
+      "achievement3": "Refactoricé componentes en React para mejorar la mantenibilidad del código"
+    },
+    "job3": {
+      "title": "Desarrollador Web Freelance",
+      "company": "Independiente",
+      "location": "Medellín, Colombia",
+      "period": "Ene 2022 – Presente",
+      "achievement1": "Diseño y desarrollo de aplicaciones web personalizadas para clientes internacionales",
+      "achievement2": "Creación de soluciones frontend en React y backend en Node.js con bases de datos MongoDB",
+      "achievement3": "Gestión de versiones y despliegue de proyectos en plataformas en la nube"
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones que ofrezco",
+    "frontend": {
+      "title": "Desarrollo Frontend",
+      "description": "Creo interfaces de usuario modernas, responsivas y optimizadas para SEO utilizando React, Next.js y tecnologías de vanguardia.",
+      "features": [
+        "Interfaces interactivas y dinámicas",
+        "Optimización para SEO",
+        "Diseño responsivo",
+        "Performance y velocidad",
+        "Integración con APIs"
+      ]
+    },
+    "backend": {
+      "title": "Desarrollo Backend",
+      "description": "Construyo APIs RESTful robustas y escalables utilizando Node.js, Express y bases de datos MongoDB.",
+      "features": [
+        "APIs RESTful",
+        "Bases de datos MongoDB",
+        "Autenticación y seguridad",
+        "Arquitectura escalable",
+        "Optimización de rendimiento"
+      ]
+    },
+    "fullstack": {
+      "title": "Desarrollo Full Stack",
+      "description": "Ofrezco soluciones completas desde el diseño hasta la implementación, cubriendo tanto frontend como backend.",
+      "features": [
+        "Aplicaciones web completas",
+        "Integración frontend-backend",
+        "Deployment en la nube",
+        "Gestión de proyectos",
+        "Metodologías ágiles"
+      ]
+    },
+    "consulting": {
+      "title": "Consultoría y Optimización",
+      "description": "Ayudo a mejorar el rendimiento y la escalabilidad de aplicaciones existentes.",
+      "features": [
+        "Optimización de código",
+        "Mejora de rendimiento",
+        "Refactorización",
+        "Code review",
+        "Capacitación técnica"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "subtitle": "Estoy disponible para nuevos proyectos",
+    "description": "Si tienes un proyecto en mente o quieres trabajar juntos, no dudes en contactarme.",
+    "email": "Email",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "nationality": "Nacionalidad",
+    "emailValue": "danieluz3188@gmail.com",
+    "phoneValue": "+57 302 701 1214",
+    "locationValue": "Medellín, Colombia",
+    "nationalityValue": "Venezolano",
+    "sendMessage": "Enviar Mensaje",
+    "getInTouch": "Pongámonos en contacto",
+    "emailSubject": "Contacto desde Portafolio"
   },
   "portfolio": {
-    "title": "Proyectos"
+    "title": "Proyectos",
+    "subtitle": "Algunos de mis trabajos recientes",
+    "comingSoon": "Próximamente",
+    "description": "Estoy trabajando en agregar mis proyectos destacados aquí. Mientras tanto, puedes revisar mi experiencia laboral o contactarme para conocer más sobre mi trabajo.",
+    "viewProject": "Ver Proyecto",
+    "viewCode": "Ver Código"
   }
 }

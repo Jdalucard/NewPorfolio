@@ -106,6 +106,7 @@ export default function Sidebar() {
           <button
             className="p-2 rounded-lg transition-transform duration-300 hover:scale-125"
             onClick={toggleLanguage}
+            title={language === "es" ? "Switch to English" : "Cambiar a Español"}
           >
             {language === "es" ? (
               <span className="fi fi-us"></span>
