@@ -8,139 +8,249 @@
     "experience": "Experiencia"
   },
   "home": {
-    "title": "Hola, soy ",
-    "aboutMe": "Un poco sobre Mi",
-    "subtitle": "Desarrollador Web Full Stack",
+    "title": "Hola, soy",
+    "subtitle": "Full Stack & Mobile Developer",
+    "aboutMe": "Soy un desarrollador Full Stack & Mobile con más de 3 años creando experiencias web y móviles escalables con React, React Native, Next.js y Node.js.",
+    "description": "He formado parte de equipos de desarrollo en empresas como CC Orbit, Pitchdb y Mrulex.Ou, colaborando tanto en squads ágiles como en proyectos freelance, enfocándome siempre en rendimiento, seguridad y calidad del código.",
     "downloadCV": "Descargar CV",
-    "description": "Soy un desarrollador full stack con experiencia en el desarrollo de aplicaciones web modernas, especializado en React, Node.js, Express y MongoDB. Mi pasión está enfocada en la optimización de rendimiento y la creación de soluciones eficientes y escalables, con habilidades en trabajo en equipo y metodologías ágiles como Scrum."
+    "contactMe": "Hablemos",
+    "statYearsLabel": "Años de experiencia",
+    "statProjectsLabel": "Proyectos entregados",
+    "statTechLabel": "Tecnologías",
+    "techStack": "Stack tecnológico"
   },
   "about": {
-    "title": "Acerca de mí",
-    "subtitle": "Desarrollador Web Full Stack",
-    "profile": "Perfil Profesional",
-    "profileDescription": "Soy un desarrollador web full stack con experiencia en el desarrollo de aplicaciones web modernas. Me especializo en tecnologías como React, Node.js, Express y MongoDB, con una pasión por la optimización de rendimiento y la creación de soluciones eficientes y escalables. Tengo experiencia trabajando en equipos multidisciplinarios utilizando metodologías ágiles como Scrum.",
-    "skills": "Habilidades",
+    "title": "Hola, soy Jose Martinez",
+    "titleRole": "Desarrollador Full Stack & Mobile",
+    "subtitle": "Trayectoria profesional",
+    "heroDesc1": "Soy un desarrollador Full Stack & Mobile con más de 3 años de experiencia creando aplicaciones web y móviles modernas con React, React Native, Next.js y Node.js.",
+    "heroDesc2": "Me especializo en el desarrollo de soluciones escalables, optimización de rendimiento e integración de APIs RESTful con autenticación segura mediante JWT. He participado en proyectos internacionales enfocados en calidad de código, seguridad y experiencia de usuario.",
+    "downloadCV": "Descargar CV",
+    "profile": "Perfil profesional",
+    "profileDescription": "Profesional orientado a resultados, especialista en ecosistema JavaScript, arquitectura de APIs RESTful y adopción de IA para acelerar entregas.",
+    "skills": "Habilidades técnicas",
     "frontend": "Frontend",
-    "frontendSkills": "HTML5, CSS3, JavaScript (ES8+), Next.js, React, Redux Toolkit. Desarrollo de interfaces interactivas optimizadas para SEO.",
+    "frontendSkills": "React, Next.js, Redux Toolkit, JavaScript ES6+, HTML5, CSS3.",
+    "mobile": "Mobile",
+    "mobileSkills": "React Native, optimización para Android, integración de módulos nativos y despliegues multiplataforma.",
     "backend": "Backend",
-    "backendSkills": "Node.js, Express.js, MongoDB. Creación de APIs RESTful y gestión de bases de datos no relacionales.",
-    "tools": "Otras Herramientas",
-    "toolsSkills": "Control de versiones con Git y GitHub, Metodologías Ágiles (Scrum), ChatGPT, Gemini, GitHub Copilot, Claude (Anthropic), GPT-4, GPT-3.5 (OpenAI), LLaMA (Meta).",
+    "backendSkills": "Node.js, Express.js, creación de APIs RESTful, autenticación segura con JWT.",
+    "databases": "Bases de datos",
+    "databasesSkills": "SQL, MariaDB, MongoDB modelado, optimización y monitoreo.",
+    "ai": "IA aplicada",
+    "aiSkills": "ChatGPT, GitHub Copilot, Claude, Gemini, GPT-4, LLaMA para acelerar decisiones.",
+    "devops": "Herramientas & DevOps",
+    "devopsSkills": "Git, GitHub, versionado semántico y despliegues en plataformas Cloud.",
     "education": "Educación",
-    "education1": "U Camp, Bootcamp Full Stack",
-    "education1Date": "Ene 2021 – Nov 2021",
-    "education1Location": "México DF, México",
-    "education2": "Instituto Universitario de Administración y Gerencia (UDAG)",
-    "education2Degree": "TSU Organización y Métodos",
-    "education2Date": "Ene 2010 – Dic 2013",
-    "education2Location": "Caracas, Venezuela",
-    "certifications": "Certificaciones",
-    "certificationsLink": "Ver Badges",
+    "education1": "Bootcamp Full Stack | U Camp",
+    "education1Degree": "Certificación profesional",
+    "education1Date": "2021",
+    "education1Location": "México",
+    "education2": "TSU Organización y Métodos | IUDAG",
+    "education2Degree": "Título universitario",
+    "education2Date": "2013",
+    "education2Location": "Venezuela",
+    "certificationsTitle": "Certificaciones destacadas",
+    "certificationName": "Bootcamp Full Stack | Desarrollo Web",
+    "certificationDescription": "Diploma emitido por U Camp (2021).",
     "interests": "Intereses",
-    "interest1": "Desarrollo Web y Tecnología",
-    "interest2": "Innovación y Crecimiento Personal",
-    "interest3": "Metodologías Ágiles"
+    "interest1": "Arquitecturas escalables",
+    "interest2": "Aplicaciones móviles nativas",
+    "interest3": "Automatización con IA"
   },
   "experience": {
-    "title": "Experiencia Profesional",
+    "title": "Experiencia profesional",
     "job1": {
+      "title": "Desarrollador Full Stack & Mobile",
+      "company": "CC Orbit",
+      "location": "Remoto",
+      "period": "Feb 2025 – Feb 2026",
+      "achievement1": "Lideré el desarrollo de aplicaciones móviles multiplataforma con React Native y soporte web.",
+      "achievement2": "Diseñé e integré arquitecturas de datos con SQL y MariaDB para garantizar integridad.",
+      "achievement3": "Implementé funcionalidades nativas y optimizaciones que elevaron el rendimiento en Android.",
+      "achievement4": "Desarrollé lógica de negocio backend para asegurar la escalabilidad de la plataforma."
+    },
+    "job2": {
+      "title": "Desarrollador Full Stack",
+      "company": "Pitchdb",
+      "location": "Texas, EE. UU.",
+      "period": "2023 – Jul 2024",
+      "achievement1": "Construí funcionalidades críticas en Next.js y Node.js reduciendo 40% los tiempos de respuesta.",
+      "achievement2": "Implementé autenticación con JWT fortaleciendo la seguridad.",
+      "achievement3": "Refactoricé componentes en React mejorando la mantenibilidad.",
+      "achievement4": "Optimicé la interfaz de usuario reduciendo 30% los tiempos de carga."
+    },
+    "job3": {
       "title": "Desarrollador Frontend",
       "company": "Mrulex.Ou",
       "location": "Tallin, Estonia",
       "period": "Sep 2022 – Nov 2024",
-      "achievement1": "Diseñé y optimicé la interfaz de usuario en React, logrando una mejora del 30% en la velocidad de carga",
-      "achievement2": "Implementé Redux Toolkit para una mejor gestión del estado",
-      "achievement3": "Colaboré con diseñadores y desarrolladores backend para integrar APIs RESTful"
+      "achievement1": "Diseñé interfaces responsivas en React y Next.js para la plataforma legaltech.",
+      "achievement2": "Gestioné estado global con Redux Toolkit para experiencias consistentes.",
+      "achievement3": "Integré APIs RESTful colaborando con el equipo backend.",
+      "achievement4": "Realicé auditorías de rendimiento que redujeron tiempos de carga en 30%."
     },
-    "job2": {
-      "title": "Desarrollador Full Stack",
-      "company": "Pitchdb.",
-      "location": "Texas, EE.UU.",
-      "period": "2023 – Jul 2024",
-      "achievement1": "Desarrollé funcionalidades clave en Next.js y Node.js, logrando una optimización del 40% en los tiempos de respuesta",
-      "achievement2": "Implementé autenticación segura con JWT",
-      "achievement3": "Refactoricé componentes en React para mejorar la mantenibilidad del código"
-    },
-    "job3": {
+    "job4": {
       "title": "Desarrollador Web Freelance",
-      "company": "Independiente",
+      "company": "Proyecto independiente",
       "location": "Medellín, Colombia",
       "period": "Ene 2022 – Presente",
-      "achievement1": "Diseño y desarrollo de aplicaciones web personalizadas para clientes internacionales",
-      "achievement2": "Creación de soluciones frontend en React y backend en Node.js con bases de datos MongoDB",
-      "achievement3": "Gestión de versiones y despliegue de proyectos en plataformas en la nube"
+      "achievement1": "Diseño y desarrollo de aplicaciones personalizadas con React y Node.js.",
+      "achievement2": "Gestión integral de bases de datos MongoDB y despliegues cloud.",
+      "achievement3": "Acompañamiento técnico en decisiones de arquitectura.",
+      "achievement4": "Automatización de flujos mediante herramientas de IA."
     }
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Soluciones que ofrezco",
+    "subtitle": "Transformo ideas en productos listos para producción",
+    "whatCanIDoTitle": "¿Qué puedo hacer por tu proyecto?",
+    "whatCanIDo": [
+      "Crear tu producto desde cero",
+      "Mejorar una app existente",
+      "Escalar una plataforma",
+      "Resolver problemas técnicos complejos"
+    ],
     "frontend": {
-      "title": "Desarrollo Frontend",
-      "description": "Creo interfaces de usuario modernas, responsivas y optimizadas para SEO utilizando React, Next.js y tecnologías de vanguardia.",
+      "title": "Frontend centrado en experiencia",
+      "summary": "Construyo interfaces rápidas, accesibles y escalables enfocadas en experiencia de usuario y rendimiento.",
       "features": [
-        "Interfaces interactivas y dinámicas",
-        "Optimización para SEO",
-        "Diseño responsivo",
-        "Performance y velocidad",
-        "Integración con APIs"
+        "Desarrollo de interfaces modernas con React y Next.js",
+        "Arquitectura de componentes reutilizables",
+        "Optimización de rendimiento y carga inicial",
+        "Gestión de estado global con Redux Toolkit",
+        "Integración de APIs REST"
+      ]
+    },
+    "mobile": {
+      "title": "Desarrollo Mobile",
+      "summary": "Desarrollo aplicaciones móviles robustas y eficientes listas para producción.",
+      "features": [
+        "Apps multiplataforma con React Native",
+        "Integración de funciones nativas",
+        "Optimización de rendimiento en Android",
+        "Manejo de datos offline y sincronización",
+        "Consumo de APIs y autenticación segura"
       ]
     },
     "backend": {
       "title": "Desarrollo Backend",
-      "description": "Construyo APIs RESTful robustas y escalables utilizando Node.js, Express y bases de datos MongoDB.",
+      "summary": "Construyo backends seguros, escalables y preparados para crecimiento.",
       "features": [
-        "APIs RESTful",
-        "Bases de datos MongoDB",
-        "Autenticación y seguridad",
-        "Arquitectura escalable",
-        "Optimización de rendimiento"
+        "APIs RESTful con Node.js y Express",
+        "Autenticación segura con JWT",
+        "Integración con bases SQL y NoSQL",
+        "Diseño de lógica de negocio escalable",
+        "Manejo de errores y validaciones"
       ]
     },
     "fullstack": {
       "title": "Desarrollo Full Stack",
-      "description": "Ofrezco soluciones completas desde el diseño hasta la implementación, cubriendo tanto frontend como backend.",
+      "summary": "Transformo ideas en productos digitales listos para producción.",
       "features": [
-        "Aplicaciones web completas",
-        "Integración frontend-backend",
-        "Deployment en la nube",
-        "Gestión de proyectos",
-        "Metodologías ágiles"
+        "Desarrollo end-to-end de aplicaciones",
+        "Integración frontend + backend + base de datos",
+        "Arquitectura modular y mantenible",
+        "Optimización de tiempos de respuesta",
+        "Implementación de funcionalidades completas"
+      ]
+    },
+    "databases": {
+      "title": "Bases de Datos",
+      "summary": "Diseño estructuras de datos eficientes que garantizan rendimiento y estabilidad.",
+      "features": [
+        "Diseño de esquemas relacionales",
+        "Optimización de consultas SQL",
+        "Integración con MariaDB y MongoDB",
+        "Modelado de datos eficiente",
+        "Migraciones y normalización"
+      ]
+    },
+    "performance": {
+      "title": "Optimización y Rendimiento",
+      "summary": "Optimizo aplicaciones para máxima velocidad, eficiencia y escalabilidad.",
+      "features": [
+        "Mejora de performance web y mobile",
+        "Reducción de tiempos de carga",
+        "Refactorización de código",
+        "Análisis de cuellos de botella",
+        "Optimización de renderizado"
       ]
     },
     "consulting": {
-      "title": "Consultoría y Optimización",
-      "description": "Ayudo a mejorar el rendimiento y la escalabilidad de aplicaciones existentes.",
+      "title": "Consultoría Técnica",
+      "summary": "Acompaño equipos y proyectos para mejorar arquitectura, rendimiento y calidad de código.",
       "features": [
-        "Optimización de código",
-        "Mejora de rendimiento",
-        "Refactorización",
-        "Code review",
-        "Capacitación técnica"
+        "Evaluación técnica de proyectos",
+        "Mejores prácticas de arquitectura",
+        "Revisión de código y optimización",
+        "Estrategias de escalabilidad",
+        "Integración de herramientas IA para desarrollo"
       ]
     }
   },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Casos de estudio destacados",
+    "projects": {
+      "desapego": {
+        "title": "Desapego",
+        "description": "Marketplace de ropa de segunda mano construido con Next.js. Incluye listados por categoría, descubrimiento de marcas, perfiles de vendedor, carrito y experiencia completa de comercio circular."
+      },
+      "raiz": {
+        "title": "RAÍZ",
+        "description": "Plataforma de gestión de huella de carbono para empresas. Automatiza el cálculo de CO₂, emite certificados digitales verificables, permite compensación real con árboles con trazabilidad QR, e incluye app móvil en React Native."
+      },
+      "ruleta": {
+        "title": "Ruleta Club",
+        "description": "Comunidad online con simulador de ruleta en tiempo real. Partidas emuladas, chat en vivo, torneos con ranking global y autenticación de usuarios — la mayor comunidad de jugadores de ruleta."
+      },
+      "iptracker": {
+        "title": "IP Address Tracker",
+        "description": "App en React + Vite que geolocaliza cualquier dirección IP o dominio en tiempo real. Muestra ubicación, zona horaria y proveedor ISP sobre un mapa interactivo con Leaflet y la API de ipify."
+      },
+      "coingecko": {
+        "title": "Crypto Market Tracker",
+        "description": "App en React que consume la API pública de CoinGecko para mostrar en tiempo real el ranking de las 100 principales criptomonedas con precio, variación 24 h y capitalizáción de mercado."      },
+      "xveritas": {
+        "title": "Xveritas",
+        "description": "Sitio web de servicios jurídicos para una firma colombiana especializada en trámites de tránsito: multas, salida de vehículos, actualización de SIMIT, refrendación de licencias e insolvencia. Desarrollado con enfoque en diseño responsivo y UX clara."
+      },
+      "pitchdb": {
+        "title": "PitchDB",
+        "description": "Colaboración Full Stack en una plataforma SaaS de outreach para podcasts y medios de prensa. Implementé funcionalidades críticas en Next.js y Node.js reduciendo 40% los tiempos de respuesta, autenticación JWT y optimización de UI en React con mejora del 30% en tiempos de carga."      }
+    },
+    "viewProject": "Ver proyecto",
+    "viewCode": "Ver código"
+  },
   "contact": {
     "title": "Contacto",
-    "subtitle": "Estoy disponible para nuevos proyectos",
-    "description": "Si tienes un proyecto en mente o quieres trabajar juntos, no dudes en contactarme.",
-    "email": "Email",
+    "subtitle": "Construyamos el siguiente producto",
+    "description": "Disponible para roles full-time, consultorías o proyectos freelance dentro del ecosistema JavaScript y mobile.",
+    "email": "Correo electrónico",
+    "emailValue": "josed3188@gmail.com",
     "phone": "Teléfono",
-    "location": "Ubicación",
-    "nationality": "Nacionalidad",
-    "emailValue": "danieluz3188@gmail.com",
     "phoneValue": "+57 302 701 1214",
+    "location": "Ubicación",
     "locationValue": "Medellín, Colombia",
+    "nationality": "Nacionalidad",
     "nationalityValue": "Venezolano",
-    "sendMessage": "Enviar Mensaje",
-    "getInTouch": "Pongámonos en contacto",
-    "emailSubject": "Contacto desde Portafolio"
-  },
-  "portfolio": {
-    "title": "Proyectos",
-    "subtitle": "Algunos de mis trabajos recientes",
-    "comingSoon": "Próximamente",
-    "description": "Estoy trabajando en agregar mis proyectos destacados aquí. Mientras tanto, puedes revisar mi experiencia laboral o contactarme para conocer más sobre mi trabajo.",
-    "viewProject": "Ver Proyecto",
-    "viewCode": "Ver Código"
+    "getInTouch": "Ponte en contacto",
+    "emailSubject": "Hola Jose, me interesa tu experiencia",
+    "sendMessage": "Enviar mensaje",
+    "linkedinTitle": "LinkedIn",
+    "linkedinValue": "jose-daniel-martinez-pacheco",
+    "linkedinLink": "https://www.linkedin.com/in/jose-daniel-martinez-pacheco-29b65213a/",
+    "whatsappTitle": "WhatsApp",
+    "whatsappValue": "+57 302 701 1214",
+    "whatsappLink": "https://wa.me/573027011214",
+    "formHelper": "Completa el formulario y te responderé en menos de 24 horas.",
+    "formNameLabel": "Nombre completo",
+    "formNamePlaceholder": "Nombre completo",
+    "formEmailLabel": "Correo electrónico",
+    "formEmailPlaceholder": "Tu correo",
+    "formMessageLabel": "Mensaje",
+    "formMessagePlaceholder": "Deja tu mensaje",
+    "formButton": "Enviar"
   }
 }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
 @import url('./../styles/themes.css');
 
 @tailwind base;
@@ -13,6 +14,33 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background: #2563eb;
+  top: -120px;
+  left: -80px;
+}
+
+body::after {
+  background: #ec4899;
+  bottom: -140px;
+  right: -60px;
 }
 
 
@@ -37,13 +65,125 @@ body {
   }
 }
 
+@layer utilities {
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.8s ease forwards;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    position: relative;
+    border-radius: 1.75rem;
+    padding: clamp(1.5rem, 3vw, 2.75rem);
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    box-shadow: 0 25px 60px rgba(2, 6, 23, 0.45);
+    overflow: hidden;
+    backdrop-filter: blur(18px);
+  }
+
+  .glass-panel::before,
+  .glass-panel::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  .glass-panel::before {
+    width: 360px;
+    height: 360px;
+    top: -140px;
+    right: -60px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.5), transparent 70%);
+  }
+
+  .glass-panel::after {
+    width: 420px;
+    height: 420px;
+    bottom: -180px;
+    left: -120px;
+    background: radial-gradient(circle, rgba(236, 72, 153, 0.35), transparent 70%);
+  }
+
+  .frosted-card {
+    position: relative;
+    border-radius: 1.25rem;
+    border: 1px solid var(--frosted-border);
+    background: var(--frosted-bg);
+    padding: 1.25rem;
+    box-shadow: 0 18px 40px rgba(3, 7, 18, 0.35);
+    backdrop-filter: blur(14px);
+    overflow: hidden;
+  }
+
+  .frosted-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .frosted-card:hover::before {
+    opacity: 1;
+  }
+
+  .frosted-card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .glass-chip {
+    border-radius: 9999px;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    background: rgba(148, 163, 184, 0.15);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      0 10px 25px rgba(15, 23, 42, 0.35);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 #animation .text-xl {
   font-size: 1.5rem;
   color: currentColor;
   letter-spacing: 0.06em;
 }
 
-/* Material Symbols fallback */
+/* Marquee animation */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 28s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Material Symbols */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,

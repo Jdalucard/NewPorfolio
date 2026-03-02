@@ -40,20 +40,21 @@ export default function Sidebar() {
   };
 
   return (
-    <aside className="h-[96%] shadow-theme-md p-3 w-72 flex flex-col justify-between border-gray-300 dark:border-gray-700 rounded-lg">
-      <div className="shadow-theme-md p-2 rounded-lg border-b-2 border-gray-300 dark:border-gray-700 pb-4 flex flex-col items-center">
+    <aside className="glass-panel w-72 flex flex-col overflow-hidden flex-shrink-0 self-stretch">
+      {/* Profile */}
+      <div className="flex flex-col items-center gap-4 text-center px-6 pt-6 pb-5">
         <Image
           src={picture}
           alt="My Picture"
-          width={150}
-          height={150}
-          className="rounded-full object-cover mt-2"
+          width={120}
+          height={120}
+          className="rounded-full object-cover shadow-[0_20px_45px_rgba(0,0,0,0.35)]"
         />
-        <div className="flex justify-between gap-4 mt-4 items-center">
-          <h2>Jose Martinez</h2>
+        <div className="flex items-center justify-between gap-4 w-full">
+          <h2 className="text-base font-semibold tracking-wide text-[var(--color-text)]">Jose Martinez</h2>
           <button
             onClick={togglePlayPause}
-            className="rounded-lg transition-all duration-300 hover:scale-150 hover:-rotate-6 hover:text-[var(--color-primary)]"
+            className="rounded-full bg-white/10 p-2 transition-all duration-300 hover:scale-110 hover:bg-white/20"
           >
             <audio
               ref={audioRef}
@@ -61,50 +62,56 @@ export default function Sidebar() {
               onEnded={() => setIsPlaying(false)}
             />
             {isPlaying ? (
-              <span className="material-symbols-outlined">volume_up</span>
+              <span className="material-symbols-outlined text-[18px]">volume_up</span>
             ) : (
-              <span className="material-symbols-outlined">volume_off</span>
+              <span className="material-symbols-outlined text-[18px]">volume_off</span>
             )}
           </button>
         </div>
-        <div>
-          <motion.h1
-            key={key}
-            className="text-lg font-bold flex flex-wrap font-zr"
-            variants={container}
-            initial="hidden"
-            animate="visible"
-          >
-            {currentPhrase.split("").map((char, index) => (
-              <motion.span
-                key={index}
-                variants={letter}
-                className={char === " " ? "mr-1" : ""}
-              >
-                {char}
-              </motion.span>
-            ))}
-          </motion.h1>
-        </div>
+        <motion.h1
+          key={key}
+          className="text-sm font-bold flex flex-wrap justify-center text-[var(--color-primary)]"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          {currentPhrase.split("").map((char, index) => (
+            <motion.span
+              key={index}
+              variants={letter}
+              className={char === " " ? "mr-1" : ""}
+            >
+              {char}
+            </motion.span>
+          ))}
+        </motion.h1>
       </div>
 
-      <Navigation/>
+      <div className="mx-4 h-px bg-white/10" />
 
-      <div className="flex justify-between">
+      {/* Navigation */}
+      <div className="flex-1 overflow-y-auto px-4 py-4">
+        <Navigation />
+      </div>
+
+      <div className="mx-4 h-px bg-white/10" />
+
+      {/* Controls */}
+      <div className="flex items-center justify-between px-6 py-4">
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-lg transition-all duration-300 hover:scale-110 hover:rotate-12 hover:text-[var(--color-primary)]"
+          className="glass-chip px-3 py-2 transition-all duration-300 hover:-translate-y-0.5"
         >
           {theme === "dark" ? (
-            <span className="material-symbols-outlined">moon_stars</span>
+            <span className="material-symbols-outlined text-[18px]">dark_mode</span>
           ) : (
-            <span className="material-symbols-outlined">brightness_7</span>
+            <span className="material-symbols-outlined text-[18px]">light_mode</span>
           )}
         </button>
 
         {isClient && (
           <button
-            className="p-2 rounded-lg transition-transform duration-300 hover:scale-125"
+            className="glass-chip px-3 py-2 transition-all duration-300 hover:-translate-y-0.5"
             onClick={toggleLanguage}
             title={language === "es" ? "Switch to English" : "Cambiar a Español"}
           >

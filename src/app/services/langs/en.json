@@ -8,139 +8,251 @@
     "experience": "Experience"
   },
   "home": {
-    "title": "Hello, I'm ",
-    "aboutMe": "A little about me",
-    "subtitle": "Full Stack Web Developer",
-    "downloadCV": "Download CV",
-    "description": "I am a full stack developer with experience in modern web application development, specializing in React, Node.js, Express, and MongoDB. My passion is focused on performance optimization and creating efficient and scalable solutions, with skills in teamwork and agile methodologies like Scrum."
+    "title": "Hi, I'm",
+    "subtitle": "Full Stack & Mobile Developer",
+    "aboutMe": "I'm a Full Stack & Mobile engineer with 3+ years building scalable products with React, React Native, Next.js and Node.js.",
+    "description": "I've been part of development teams at companies like CC Orbit, Pitchdb and Mrulex.Ou, working both in agile squads and as a freelancer — always focused on performance, security and clean code.",
+    "downloadCV": "Download résumé",
+    "contactMe": "Let's talk",
+    "statYearsLabel": "Years of experience",
+    "statProjectsLabel": "Delivered projects",
+    "statTechLabel": "Technologies",
+    "techStack": "Tech stack"
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "Full Stack Web Developer",
-    "profile": "Professional Profile",
-    "profileDescription": "I am a full stack web developer with experience in modern web application development. I specialize in technologies like React, Node.js, Express, and MongoDB, with a passion for performance optimization and creating efficient and scalable solutions. I have experience working in multidisciplinary teams using agile methodologies like Scrum.",
-    "skills": "Skills",
+    "title": "Hi, I'm Jose Martinez",
+    "titleRole": "Full Stack & Mobile Developer",
+    "subtitle": "Professional journey",
+    "heroDesc1": "I'm a Full Stack & Mobile developer with over 3 years of experience building modern web and mobile applications with React, React Native, Next.js and Node.js.",
+    "heroDesc2": "I specialize in scalable solution development, performance optimization and RESTful API integration with secure JWT authentication. I have worked on international projects focused on code quality, security and user experience.",
+    "downloadCV": "Download CV",
+    "profile": "Professional profile",
+    "profileDescription": "Result-driven developer specialized in the JavaScript ecosystem, RESTful API design and AI-assisted delivery.",
+    "skills": "Technical skills",
     "frontend": "Frontend",
-    "frontendSkills": "HTML5, CSS3, JavaScript (ES8+), Next.js, React, Redux Toolkit. Development of SEO-optimized interactive interfaces.",
+    "frontendSkills": "React, Next.js, Redux Toolkit, JavaScript (ES6+), HTML5, CSS3.",
+    "mobile": "Mobile",
+    "mobileSkills": "React Native, Android performance tuning, native module integration and multi-platform releases.",
     "backend": "Backend",
-    "backendSkills": "Node.js, Express.js, MongoDB. Creation of RESTful APIs and management of non-relational databases.",
-    "tools": "Other Tools",
-    "toolsSkills": "Version control with Git and GitHub, Agile Methodologies (Scrum), ChatGPT, Gemini, GitHub Copilot, Claude (Anthropic), GPT-4, GPT-3.5 (OpenAI), LLaMA (Meta).",
+    "backendSkills": "Node.js, Express.js, RESTful APIs, secure authentication with JWT.",
+    "databases": "Databases",
+    "databasesSkills": "SQL, MariaDB, MongoDB (modeling, optimization, monitoring).",
+    "ai": "Applied AI",
+    "aiSkills": "ChatGPT, GitHub Copilot, Claude, Gemini, GPT-4, LLaMA to speed up delivery.",
+    "devops": "Tooling & DevOps",
+    "devopsSkills": "Git, GitHub, semantic versioning and cloud deployments.",
     "education": "Education",
-    "education1": "U Camp, Full Stack Bootcamp",
-    "education1Date": "Jan 2021 – Nov 2021",
-    "education1Location": "Mexico City, Mexico",
-    "education2": "University Institute of Administration and Management (UDAG)",
-    "education2Degree": "TSU Organization and Methods",
-    "education2Date": "Jan 2010 – Dec 2013",
-    "education2Location": "Caracas, Venezuela",
-    "certifications": "Certifications",
-    "certificationsLink": "View Badges",
+    "education1": "Full Stack Bootcamp | U Camp",
+    "education1Degree": "Professional certification",
+    "education1Date": "2021",
+    "education1Location": "Mexico",
+    "education2": "TSU in Organization & Methods | IUDAG",
+    "education2Degree": "Undergraduate degree",
+    "education2Date": "2013",
+    "education2Location": "Venezuela",
+    "certificationsTitle": "Highlighted certifications",
+    "certificationName": "Full Stack Bootcamp | Web Development",
+    "certificationDescription": "Diploma issued by U Camp (2021).",
     "interests": "Interests",
-    "interest1": "Web Development and Technology",
-    "interest2": "Innovation and Personal Growth",
-    "interest3": "Agile Methodologies"
+    "interest1": "Scalable architectures",
+    "interest2": "Native mobile apps",
+    "interest3": "AI-driven automation"
   },
   "experience": {
-    "title": "Professional Experience",
+    "title": "Professional experience",
     "job1": {
+      "title": "Full Stack & Mobile Developer",
+      "company": "CC Orbit",
+      "location": "Remote",
+      "period": "Feb 2025 – Feb 2026",
+      "achievement1": "Led cross-platform mobile development with React Native and web support.",
+      "achievement2": "Designed SQL/MariaDB data architectures to ensure data integrity.",
+      "achievement3": "Implemented native features and optimizations that boosted Android performance.",
+      "achievement4": "Built backend business logic to keep the platform scalable."
+    },
+    "job2": {
+      "title": "Full Stack Developer",
+      "company": "Pitchdb",
+      "location": "Texas, USA",
+      "period": "2023 – Jul 2024",
+      "achievement1": "Delivered critical Next.js and Node.js features cutting response times by 40%.",
+      "achievement2": "Implemented JWT-based authentication that reinforced platform security.",
+      "achievement3": "Refactored React components to improve maintainability and scalability.",
+      "achievement4": "Optimized UI performance reducing load times by up to 30%."
+    },
+    "job3": {
       "title": "Frontend Developer",
       "company": "Mrulex.Ou",
       "location": "Tallinn, Estonia",
       "period": "Sep 2022 – Nov 2024",
-      "achievement1": "Designed and optimized the user interface in React, achieving a 30% improvement in loading speed",
-      "achievement2": "Implemented Redux Toolkit for better state management",
-      "achievement3": "Collaborated with designers and backend developers to integrate RESTful APIs"
+      "achievement1": "Crafted responsive interfaces in React and Next.js for the legaltech platform.",
+      "achievement2": "Managed global state with Redux Toolkit to keep experiences consistent.",
+      "achievement3": "Partnered with backend teams to integrate secure RESTful APIs.",
+      "achievement4": "Performed performance audits that cut load times by 30%."
     },
-    "job2": {
-      "title": "Full Stack Developer",
-      "company": "Pitchdb.",
-      "location": "Texas, USA",
-      "period": "2023 – Jul 2024",
-      "achievement1": "Developed key functionalities in Next.js and Node.js, achieving a 40% optimization in response times",
-      "achievement2": "Implemented secure authentication with JWT",
-      "achievement3": "Refactored React components to improve code maintainability"
-    },
-    "job3": {
+    "job4": {
       "title": "Freelance Web Developer",
-      "company": "Independent",
+      "company": "Independent practice",
       "location": "Medellín, Colombia",
       "period": "Jan 2022 – Present",
-      "achievement1": "Design and development of personalized web applications for international clients",
-      "achievement2": "Creation of frontend solutions in React and backend in Node.js with MongoDB databases",
-      "achievement3": "Version management and project deployment on cloud platforms"
+      "achievement1": "Built tailored web applications for international clients using React and Node.js.",
+      "achievement2": "Handled MongoDB databases end-to-end plus cloud deployments.",
+      "achievement3": "Guided architectural decisions to keep products maintainable.",
+      "achievement4": "Automated delivery workflows using AI-driven tools."
     }
   },
   "services": {
     "title": "Services",
-    "subtitle": "Solutions I offer",
+    "subtitle": "Turning ideas into production-ready products",
+    "whatCanIDoTitle": "What can I do for your project?",
+    "whatCanIDo": [
+      "Build your product from scratch",
+      "Improve an existing app",
+      "Scale a platform",
+      "Solve complex technical problems"
+    ],
     "frontend": {
-      "title": "Frontend Development",
-      "description": "I create modern, responsive, and SEO-optimized user interfaces using React, Next.js, and cutting-edge technologies.",
+      "title": "Experience-driven Frontend",
+      "summary": "I build fast, accessible and scalable interfaces focused on user experience and performance.",
       "features": [
-        "Interactive and dynamic interfaces",
-        "SEO optimization",
-        "Responsive design",
-        "Performance and speed",
-        "API integration"
+        "Modern interfaces with React and Next.js",
+        "Reusable component architecture",
+        "Performance and initial load optimization",
+        "Global state management with Redux Toolkit",
+        "REST API integration"
+      ]
+    },
+    "mobile": {
+      "title": "Mobile Development",
+      "summary": "I develop robust and efficient mobile applications ready for production.",
+      "features": [
+        "Cross-platform apps with React Native",
+        "Native module integration",
+        "Android performance optimization",
+        "Offline data handling and synchronization",
+        "API consumption and secure authentication"
       ]
     },
     "backend": {
       "title": "Backend Development",
-      "description": "I build robust and scalable RESTful APIs using Node.js, Express, and MongoDB databases.",
+      "summary": "I build secure, scalable backends ready for growth.",
       "features": [
-        "RESTful APIs",
-        "MongoDB databases",
-        "Authentication and security",
-        "Scalable architecture",
-        "Performance optimization"
+        "RESTful APIs with Node.js and Express",
+        "Secure authentication with JWT",
+        "SQL and NoSQL database integration",
+        "Scalable business logic design",
+        "Error handling and validations"
       ]
     },
     "fullstack": {
       "title": "Full Stack Development",
-      "description": "I offer complete solutions from design to implementation, covering both frontend and backend.",
+      "summary": "I transform ideas into production-ready digital products.",
       "features": [
-        "Complete web applications",
-        "Frontend-backend integration",
-        "Cloud deployment",
-        "Project management",
-        "Agile methodologies"
+        "End-to-end application development",
+        "Frontend + backend + database integration",
+        "Modular and maintainable architecture",
+        "Response time optimization",
+        "Full feature implementation"
+      ]
+    },
+    "databases": {
+      "title": "Databases",
+      "summary": "I design efficient data structures that ensure performance and stability.",
+      "features": [
+        "Relational schema design",
+        "SQL query optimization",
+        "MariaDB and MongoDB integration",
+        "Efficient data modeling",
+        "Migrations and normalization"
+      ]
+    },
+    "performance": {
+      "title": "Optimization & Performance",
+      "summary": "I optimize applications for maximum speed, efficiency and scalability.",
+      "features": [
+        "Web and mobile performance improvement",
+        "Load time reduction",
+        "Code refactoring",
+        "Bottleneck analysis",
+        "Rendering optimization"
       ]
     },
     "consulting": {
-      "title": "Consulting and Optimization",
-      "description": "I help improve the performance and scalability of existing applications.",
+      "title": "Technical Consulting",
+      "summary": "I support teams and projects to improve architecture, performance and code quality.",
       "features": [
-        "Code optimization",
-        "Performance improvement",
-        "Refactoring",
-        "Code review",
-        "Technical training"
+        "Technical project evaluation",
+        "Architecture best practices",
+        "Code review and optimization",
+        "Scalability strategies",
+        "AI tool integration for development"
       ]
     }
   },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Featured case studies",
+    "projects": {
+      "desapego": {
+        "title": "Desapego",
+        "description": "Second-hand clothing marketplace built with Next.js. Features product listings by category, brand discovery, seller profiles, cart, and a full circular-fashion e-commerce experience."
+      },
+      "raiz": {
+        "title": "RAÍZ",
+        "description": "Carbon footprint management platform for companies. Automates CO₂ calculation, issues verifiable digital certificates, enables real tree compensation with QR traceability, and includes a React Native mobile app."
+      },
+      "ruleta": {
+        "title": "Ruleta Club",
+        "description": "Online roulette simulator community. Real-time gameplay emulation, live chat, global ranking tournaments, and user authentication — the largest roulette-player community platform."
+      },
+      "iptracker": {
+        "title": "IP Address Tracker",
+        "description": "React + Vite app that geolocalizes any IP address or domain in real time. Displays location, timezone and ISP on an interactive Leaflet map powered by the ipify API."
+      },
+      "coingecko": {
+        "title": "Crypto Market Tracker",
+        "description": "React app consuming the CoinGecko public API to display a real-time ranking of the top 100 cryptocurrencies with price, 24 h change and market cap data."
+      },
+      "xveritas": {
+        "title": "Xveritas",
+        "description": "Legal services website for a Colombian law firm specializing in traffic procedures: fines, vehicle release, SIMIT updates, license renewals and insolvency. Built with a focus on responsive design and clear UX."
+      },
+      "pitchdb": {
+        "title": "PitchDB",
+        "description": "Full Stack contributor on a SaaS platform for podcast and press outreach. Delivered critical Next.js and Node.js features cutting response times by 40%, implemented JWT authentication and optimized React UI performance by 30%."
+      }
+    },
+    "viewProject": "View project",
+    "viewCode": "View code"
+  },
   "contact": {
     "title": "Contact",
-    "subtitle": "I'm available for new projects",
-    "description": "If you have a project in mind or want to work together, don't hesitate to contact me.",
+    "subtitle": "Let's build your next product",
+    "description": "Open to full-time roles, consulting engagements or freelance collaborations within the JavaScript and mobile ecosystem.",
     "email": "Email",
+    "emailValue": "josed3188@gmail.com",
     "phone": "Phone",
-    "location": "Location",
-    "nationality": "Nationality",
-    "emailValue": "danieluz3188@gmail.com",
     "phoneValue": "+57 302 701 1214",
+    "location": "Location",
     "locationValue": "Medellín, Colombia",
+    "nationality": "Nationality",
     "nationalityValue": "Venezuelan",
-    "sendMessage": "Send Message",
-    "getInTouch": "Let's get in touch",
-    "emailSubject": "Contact from Portfolio"
-  },
-  "portfolio": {
-    "title": "Projects",
-    "subtitle": "Some of my recent work",
-    "comingSoon": "Coming Soon",
-    "description": "I'm working on adding my featured projects here. In the meantime, you can review my work experience or contact me to learn more about my work.",
-    "viewProject": "View Project",
-    "viewCode": "View Code"
+    "getInTouch": "Get in touch",
+    "emailSubject": "Hi Jose, let's talk about a new project",
+    "sendMessage": "Send message",
+    "linkedinTitle": "LinkedIn",
+    "linkedinValue": "jose-daniel-martinez-pacheco",
+    "linkedinLink": "https://www.linkedin.com/in/jose-daniel-martinez-pacheco-29b65213a/",
+    "whatsappTitle": "WhatsApp",
+    "whatsappValue": "+57 302 701 1214",
+    "whatsappLink": "https://wa.me/573027011214",
+    "formHelper": "Drop me a quick note and I'll respond within a day.",
+    "formNameLabel": "Full name",
+    "formNamePlaceholder": "Full name",
+    "formEmailLabel": "Email",
+    "formEmailPlaceholder": "Your email",
+    "formMessageLabel": "Message",
+    "formMessagePlaceholder": "Leave your message",
+    "formButton": "Send"
   }
 }

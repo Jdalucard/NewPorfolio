@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Routes } from "@/const";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "@/provider/LanguageProvider";
+
 const Navigation = () => {
   const pathname = usePathname();
 
@@ -29,99 +30,38 @@ const Navigation = () => {
     return `/${language}${route}`;
   };
 
+  const baseLink =
+    "group relative flex items-center gap-2 rounded-xl px-3 py-3 text-base font-medium transition-all duration-200 hover:bg-[var(--color-primary)]/10";
+  const activeLink =
+    "bg-gradient-to-r from-[var(--color-primary)]/20 to-transparent !text-[var(--color-primary)] font-semibold";
+  const inactiveLink = "text-[var(--color-text)]";
+
   return (
-    <>
-      <section>
-        <div className="mb-8">
-          <nav className="flex flex-col gap-4 mt-4">
+    <nav className="w-full">
+      <p className="text-xs uppercase tracking-[0.4em] text-[var(--color-secondary)] mb-3 px-1 opacity-70">
+        Menu
+      </p>
+      <div className="flex flex-col gap-1">
+        {[Routes.HOME, Routes.ABOUT, Routes.EXPERIENCE, Routes.SERVICES, Routes.PORTFOLIO, Routes.CONTACT].map(
+          (route) => (
             <Link
-              href={getLocalizedPath(Routes.HOME)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.HOME)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
+              key={route}
+              href={getLocalizedPath(route)}
+              className={`${baseLink} ${
+                isActiveLink(pathname, route)
+                  ? `${activeLink} border-l-2 border-[var(--color-primary)]`
+                  : `${inactiveLink} hover:bg-[var(--color-primary)]/10`
+              }`}
             >
-              {t("navigation.home")}
+              <span className="absolute inset-y-0 left-0 w-0.5 rounded-full bg-[var(--color-primary)]/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <span className="relative z-10">
+                {t(`navigation.${route.replace("/", "") || "home"}`)}
+              </span>
             </Link>
-            <Link
-              href={getLocalizedPath(Routes.ABOUT)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.ABOUT)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-            >
-              {t("navigation.about")}
-            </Link>
-            <Link
-              href={getLocalizedPath(Routes.EXPERIENCE)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.EXPERIENCE)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-            >
-              {t("navigation.experience")}
-            </Link>
-            <Link
-              href={getLocalizedPath(Routes.SERVICES)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.SERVICES)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-            >
-              {t("navigation.services")}
-            </Link>
-            <Link
-              href={getLocalizedPath(Routes.PORTFOLIO)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.PORTFOLIO)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-            >
-              {t("navigation.portfolio")}
-            </Link>
-            <Link
-              href={getLocalizedPath(Routes.CONTACT)}
-              className={`
-              p-2 rounded-lg transition-all duration-300 ease-in-out
-              hover:bg-[var(--theme-section-background)]
-              ${
-                isActiveLink(pathname, Routes.CONTACT)
-                  ? "bg-[var(--theme-section-background)] font-bold text-[var(--color-primary)] border-l-2 border-[var(--color-primary)] pl-4"
-                  : ""
-              }
-            `}
-            >
-              {t("navigation.contact")}
-            </Link>
-          </nav>
-        </div>
-      </section>
-    </>
+          )
+        )}
+      </div>
+    </nav>
   );
 };
 

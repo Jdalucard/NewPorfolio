@@ -6,6 +6,10 @@
   --color-secondary: #8c8c8c;
   --theme-section-background: #1a1a1a;
   --theme-standard-borders: #4d4d4d;
+  --glass-bg: rgba(6, 11, 29, 0.92);
+  --glass-border: rgba(148, 163, 184, 0.25);
+  --frosted-bg: rgba(13, 23, 49, 0.84);
+  --frosted-border: rgba(148, 163, 184, 0.18);
 
   /* Scrollbar */
   --scrollbar-track: #1a1a1a;
@@ -15,27 +19,30 @@
   /* Sombras */
   --color-shadow: #2c3e50;
 
-  
   --theme-links-hover: #3399ff;
 }
 
 [data-theme="light"] {
-  --color-bg: #f5f5f5c0;
-  --color-text: #2c3e50;
-  --color-primary: #0084ff;
-  --color-secondary: #95a5a6;
-  --theme-section-background: #eeeeee;
-  --theme-standard-borders: #dcdcdc;
+  --color-bg: #e8edf5;
+  --color-text: #1a2332;
+  --color-primary: #0070e0;
+  --color-secondary: #4a5568;
+  --theme-section-background: #dde3ed;
+  --theme-standard-borders: #c5cdd8;
+  --glass-bg: rgba(220, 228, 240, 0.75);
+  --glass-border: rgba(150, 170, 200, 0.35);
+  --frosted-bg: rgba(200, 212, 228, 0.6);
+  --frosted-border: rgba(140, 160, 190, 0.3);
 
   /* Scrollbar */
-  --scrollbar-track: #eeeeee;
-  --scrollbar-thumb: #cccccc;
-  --scrollbar-thumb-hover: #999999;
+  --scrollbar-track: #dde3ed;
+  --scrollbar-thumb: #b0bec5;
+  --scrollbar-thumb-hover: #8fa3b1;
 
   /* Sombras */
-  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow: rgba(0, 0, 0, 0.12);
 
-  --theme-links-hover: #006ac5;
+  --theme-links-hover: #005bb5;
 }
 
 [data-theme="dark"] {

@@ -23,26 +23,12 @@ export default async function RootLayout({ children, params }: Props) {
   const { locale } = await params;
   return (
     <html lang={locale}>
-      <head>
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
-          as="style"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap"
-        />
-      </head>
       <body className={`${poppins.variable} font-sans antialiased`}>
         <LanguageProvider>
           <ThemeProvider>
-            <main className="flex h-screen items-center justify-between gap-20 p-8 overflow-x-hidden">
+            <main className="flex h-screen w-full items-stretch gap-6 p-4 md:gap-10 md:p-10 overflow-hidden">
               <Sidebar />
-              <div className="relative shadow-theme-md custom-scrollbar flex-1 h-[90%] max-w-[100%] overflow-y-auto overflow-x-hidden p-5 rounded-lg">
-                <span className="absolute top-2 left-2 w-16 h-16 border-t-4 border-l-4 border-[var(--color-primary)] rounded-tl-lg"></span>
-                <span className="absolute bottom-2 right-2 w-16 h-16  border-b-4 border-r-4 border-[var(--color-primary)] rounded-br-lg"></span>
-
+              <div className="relative flex-1 overflow-y-auto overflow-x-hidden rounded-3xl">
                 <AnimatedContainer>{children}</AnimatedContainer>
               </div>
             </main>

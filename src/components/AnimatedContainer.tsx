@@ -20,7 +20,7 @@ export default function AnimatedContainer({ children }: Props) {
         exit={{ opacity: 0, x: -40 }}
         transition={{ duration: 0.4, ease: "easeInOut" }}
         className="h-full w-full overflow-x-hidden"
-        style={{ overflowX: 'hidden' }}
+        style={{ overflowX: "hidden" }}
       >
         {children}
       </motion.div>
