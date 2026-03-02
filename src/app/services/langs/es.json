@@ -10,7 +10,7 @@
   "home": {
     "title": "Hola, soy",
     "subtitle": "Full Stack & Mobile Developer",
-    "aboutMe": "Soy un desarrollador Full Stack & Mobile con más de 3 años creando experiencias web y móviles escalables con React, React Native, Next.js y Node.js.",
+    "aboutMe": "Soy  desarrollador Full Stack & Mobile con más de 3 años creando experiencias web y móviles escalables con React, React Native, Next.js y Node.js.",
     "description": "He formado parte de equipos de desarrollo en empresas como CC Orbit, Pitchdb y Mrulex.Ou, colaborando tanto en squads ágiles como en proyectos freelance, enfocándome siempre en rendimiento, seguridad y calidad del código.",
     "downloadCV": "Descargar CV",
     "contactMe": "Hablemos",
@@ -23,7 +23,7 @@
     "title": "Hola, soy Jose Martinez",
     "titleRole": "Desarrollador Full Stack & Mobile",
     "subtitle": "Trayectoria profesional",
-    "heroDesc1": "Soy un desarrollador Full Stack & Mobile con más de 3 años de experiencia creando aplicaciones web y móviles modernas con React, React Native, Next.js y Node.js.",
+    "heroDesc1": "Soy desarrollador Full Stack & Mobile con más de 3 años de experiencia creando aplicaciones web y móviles modernas con React, React Native, Next.js y Node.js.",
     "heroDesc2": "Me especializo en el desarrollo de soluciones escalables, optimización de rendimiento e integración de APIs RESTful con autenticación segura mediante JWT. He participado en proyectos internacionales enfocados en calidad de código, seguridad y experiencia de usuario.",
     "downloadCV": "Descargar CV",
     "profile": "Perfil profesional",
