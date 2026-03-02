@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -10,26 +10,33 @@ type Props = {
 
 export default function AnimatedContainer({ children }: Props) {
   const pathname = usePathname();
-  // Defer the key to a committed value so Next.js App Router's
-  // double-render during navigation doesn't fire the animation twice
   const [animKey, setAnimKey] = React.useState(pathname);
+  const [hasMounted, setHasMounted] = React.useState(false);
+
   React.useEffect(() => {
-    setAnimKey(pathname);
-  }, [pathname]);
+    setHasMounted(true);
+  }, []);
+
+  React.useEffect(() => {
+    if (pathname !== animKey) {
+      setAnimKey(pathname);
+    }
+  }, [pathname, animKey]);
+
+  const initialAnimation = hasMounted
+    ? { opacity: 0, x: 40 }
+    : false;
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={animKey}
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -40 }}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
-        className="h-full w-full overflow-x-hidden"
-        style={{ overflowX: "hidden" }}
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <motion.div
+      key={animKey}
+      initial={initialAnimation}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
+      className="h-full w-full overflow-x-hidden"
+      style={{ overflowX: "hidden" }}
+    >
+      {children}
+    </motion.div>
   );
 }

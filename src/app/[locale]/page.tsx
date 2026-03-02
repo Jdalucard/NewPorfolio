@@ -39,8 +39,8 @@ export default function Home() {
           </p>
           <div className="pt-2">
             <a
-              href="/cv-jose-martinez.pdf"
-              download
+              href="/assets/Jose_Martinez_FullStack_Mobile_Developer.pdf"
+              download="Jose_Martinez_FullStack_Mobile_Developer.pdf"
               className="inline-flex items-center gap-2 rounded-xl bg-[var(--color-primary)] px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 shadow-lg"
             >
               <span className="material-symbols-outlined text-[18px]">download</span>
