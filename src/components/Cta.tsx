@@ -7,8 +7,8 @@ const Cta = () => {
   return (
     <div className="flex gap-4 mt-3">
       <a
-        href="/assets/CVJosé_Martinez .pdf"
-        download="CV_Jose_Martinez.pdf"
+        href="/api/download-cv"
+        download="Jose_Martinez_FullStack_Mobile_Developer.pdf"
         className="
           relative
           inline-block

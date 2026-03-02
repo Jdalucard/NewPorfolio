@@ -67,8 +67,8 @@ const Contact = () => {
           <div className="space-y-4">
             {contactCards.map((card) => (
               <a
-                key={card.title}
-                href={card.href}
+                key={card.title as string}
+                href={card.href as string}
                 className="frosted-card block transition-all duration-300 hover:-translate-y-1"
                 style={{ borderLeftColor: card.borderColor, borderLeftWidth: "3px" }}
               >
