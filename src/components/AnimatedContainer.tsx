@@ -10,11 +10,17 @@ type Props = {
 
 export default function AnimatedContainer({ children }: Props) {
   const pathname = usePathname();
+  // Defer the key to a committed value so Next.js App Router's
+  // double-render during navigation doesn't fire the animation twice
+  const [animKey, setAnimKey] = React.useState(pathname);
+  React.useEffect(() => {
+    setAnimKey(pathname);
+  }, [pathname]);
 
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        key={pathname}
+        key={animKey}
         initial={{ opacity: 0, x: 40 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -40 }}

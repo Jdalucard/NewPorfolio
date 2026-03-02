@@ -7,7 +7,7 @@ const Cta = () => {
   return (
     <div className="flex gap-4 mt-3">
       <a
-        href="/api/download-cv"
+        href="/assets/Jose_Martinez_FullStack_Mobile_Developer.pdf"
         download="Jose_Martinez_FullStack_Mobile_Developer.pdf"
         className="
           relative
