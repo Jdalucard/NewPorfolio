@@ -10,21 +10,21 @@ const Contact = () => {
       title: t("contact.linkedinTitle"),
       description: t("contact.linkedinValue"),
       href: t("contact.linkedinLink"),
-      icon: "💼",
+      icon: <i className="fa-brands fa-linkedin text-xl text-[#0a66c2]"></i>,
       borderColor: "#0a66c2",
     },
     {
       title: t("contact.email"),
       description: t("contact.emailValue"),
       href: `mailto:${t("contact.emailValue")}`,
-      icon: "✉️",
+      icon: <i className="fa-solid fa-envelope text-xl text-[var(--color-primary)]"></i>,
       borderColor: "var(--color-primary)",
     },
     {
       title: t("contact.whatsappTitle"),
       description: t("contact.whatsappValue"),
       href: t("contact.whatsappLink"),
-      icon: "📱",
+      icon: <i className="fa-brands fa-whatsapp text-xl text-[#16a34a]"></i>,
       borderColor: "#16a34a",
     },
   ];
@@ -79,8 +79,8 @@ const Contact = () => {
                     <p className="text-sm text-[var(--color-secondary)]">{card.description}</p>
                   </div>
                 </div>
-                <p className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[var(--color-primary)]">
-                  {t("contact.sendMessage")} <span aria-hidden="true">↗</span>
+                <p className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)]">
+                  {t("contact.sendMessage")} <i className="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
                 </p>
               </a>
             ))}

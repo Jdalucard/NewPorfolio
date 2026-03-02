@@ -74,15 +74,15 @@ export default function Home() {
 
           {/* Stats + Tech stack */}
           <div className="flex-1 min-w-0 space-y-5">
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-2 md:gap-4">
               {[
                 { value: "3+", label: t("home.statYearsLabel") },
                 { value: "10+", label: t("home.statProjectsLabel") },
                 { value: "8+", label: t("home.statTechLabel") },
-              ].map((stat) => (
-                <div key={stat.value} className="frosted-card text-center py-4">
-                  <p className="text-2xl font-bold text-[var(--color-primary)]">{stat.value}</p>
-                  <p className="text-xs text-[var(--color-secondary)] mt-1 leading-tight">
+              ].map((stat, idx) => (
+                <div key={stat.value} className="frosted-card text-center !py-3 !px-1 md:!p-5 flex flex-col justify-center items-center">
+                  <p className="text-xl sm:text-2xl md:text-3xl font-bold text-[var(--color-primary)]">{stat.value}</p>
+                  <p className="text-[10px] md:text-xs text-[var(--color-secondary)] mt-1 md:mt-1.5 leading-[1.1] md:leading-tight w-full max-w-full break-words whitespace-normal text-balance">
                     {Array.isArray(stat.label) ? stat.label.join(", ") : stat.label}
                   </p>
                 </div>

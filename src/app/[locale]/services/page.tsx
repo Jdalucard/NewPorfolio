@@ -6,13 +6,13 @@ const Services = () => {
   const { t, getValue } = useLanguage();
 
   const serviceTypes = [
-    { key: "frontend",    icon: "🖥" },
-    { key: "mobile",      icon: "📱" },
-    { key: "backend",     icon: "⚙️" },
-    { key: "fullstack",   icon: "🧩" },
-    { key: "databases",   icon: "🗄" },
-    { key: "performance", icon: "🚀" },
-    { key: "consulting",  icon: "🧠" },
+    { key: "frontend",    icon: <i className="fa-solid fa-desktop text-2xl"></i> },
+    { key: "mobile",      icon: <i className="fa-solid fa-mobile-screen text-2xl"></i> },
+    { key: "backend",     icon: <i className="fa-solid fa-gears text-2xl"></i> },
+    { key: "fullstack",   icon: <i className="fa-solid fa-layer-group text-2xl"></i> },
+    { key: "databases",   icon: <i className="fa-solid fa-database text-2xl"></i> },
+    { key: "performance", icon: <i className="fa-solid fa-rocket text-2xl"></i> },
+    { key: "consulting",  icon: <i className="fa-solid fa-lightbulb text-2xl"></i> },
   ];
 
   return (
@@ -45,7 +45,7 @@ const Services = () => {
               <ul className="space-y-1.5">
                 {((getValue(`services.${service.key}.features`) as string[]) || []).map((feature, idx) => (
                   <li key={idx} className="flex items-start gap-2">
-                    <span className="mt-0.5 text-[var(--color-primary)] text-xs">✓</span>
+                    <span className="mt-1 text-[var(--color-primary)] text-xs"><i className="fa-solid fa-check"></i></span>
                     <p className="text-sm flex-1 text-[var(--color-secondary)]">{feature}</p>
                   </li>
                 ))}
@@ -56,8 +56,8 @@ const Services = () => {
 
         {/* What can I do for your project */}
         <div className="frosted-card border-t-4 border-[var(--color-primary)]/60">
-          <h2 className="text-xl font-bold mb-4 text-[var(--color-primary)]">
-            🛠 {t("services.whatCanIDoTitle")}
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-2 text-[var(--color-primary)]">
+            <i className="fa-solid fa-toolbox"></i> {t("services.whatCanIDoTitle")}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {((getValue("services.whatCanIDo") as string[]) || []).map((item, idx) => (
